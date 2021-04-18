@@ -5,5 +5,3 @@
   <img src="/assets/ss3.png" width="250" title="Coffee">
 </p>
 
-# bpl-flutter
-# Coffee_App
