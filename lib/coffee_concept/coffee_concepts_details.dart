@@ -33,16 +33,7 @@ class CoffeeConceptsDetails extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 20),
-        TweenAnimationBuilder<double>(
-                    tween: Tween(begin: 1.0, end: 0.0),
-                    builder: (context, value, child) {
-                      return Transform.translate(
-                        offset: Offset(-100 * value, 150 * value),
-                        child: child,
-                      );
-                    },
-                    duration: const Duration(milliseconds: 500), 
-                    child:  Column(
+       Column(
             children: [
               SizedBox(
                 height: size.height * 0.4,
@@ -81,7 +72,6 @@ class CoffeeConceptsDetails extends StatelessWidget {
               ),
             ],
           )
-        ),
         ],
       ),
     );
