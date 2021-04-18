@@ -1,0 +1,4 @@
+#Sun Apr 18 19:22:02 IST 2021
+base.0=/Users/harshak/FLUTTER_APPS/coffee/android/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
