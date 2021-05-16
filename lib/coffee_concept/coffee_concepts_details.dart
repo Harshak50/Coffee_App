@@ -21,7 +21,7 @@ class CoffeeConceptsDetails extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Hero(
-            tag: "name",
+            tag: "cofee",
             child: Text(
               coffee.name,
               maxLines: 2,
@@ -32,31 +32,26 @@ class CoffeeConceptsDetails extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 20),
+        SizedBox(height: 20),
        Column(
             children: [
-              SizedBox(
-                height: size.height * 0.4,
-                child: Hero(
-                  tag: "${coffee.name}",
-                  child: Image.asset(
-                    coffee.image,
-                    fit: BoxFit.fitHeight,
-                  ),
+              Hero(
+                tag: "${coffee.name}",
+                child: Image.asset(
+                  coffee.image,
+                  height: size.height*0.4,
                 ),
               ),
               SizedBox(height: 30),
               Center(
-                child: Positioned(
-                    child: Text(
-                      '\$${coffee.price.toStringAsFixed(2)}',
-                      style: TextStyle(
-                        fontSize: 50,
-                        fontWeight: FontWeight.w900,
-                        color: Colors.black,
-                      ),
-                    ),
+                child: Text(
+                  '\$${coffee.price.toStringAsFixed(2)}',
+                  style: TextStyle(
+                    fontSize: 50,
+                    fontWeight: FontWeight.w900,
+                    color: Colors.black,
                   ),
+                ),
                 ),
               Padding(
                 padding: const EdgeInsets.all(20.0),
@@ -71,7 +66,7 @@ class CoffeeConceptsDetails extends StatelessWidget {
                 ),
               ),
             ],
-          )
+          ),
         ],
       ),
     );
